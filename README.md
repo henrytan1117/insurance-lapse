@@ -46,8 +46,10 @@ Data was partitioned using a robust 85% training/testing split, with the trainin
 - Matrix Singularity & Certainty Traps: Discriminant Analysis (QDA) and Naive Bayes architectures completely collapsed. Diagnostics revealed that the feature NUMBER OF ADVANCE PREMIUM has exactly $0\%$ variance (all zeros) within the Lapse group, preventing matrix inversion and zeroing out joint probability products.
 
 (2) Standalone vs. Ensemble Model Comparison
-Because false positives are highly expensive in an insurance framework—causing companies to waste precious retention budget and marketing resources on loyal policyholders —minimizing False Positives (FP) at a standard $0.5$ classification threshold was set as a primary architectural constraint.
+Because false positives are highly expensive in an insurance framework—causing companies to waste precious retention budget and marketing resources on loyal policyholders —minimizing False Positives (FP) at a standard $0.5$ classification threshold was set as a primary architectural constraint. Refer to the diagram below for the modeling results
 
+![Modeling Result 1](result1.png)
+![Modeling Result 2 with Ensemble Model](result2.png)
 
 
 Final Model Selection: A weighted blend of $0.6 \times \text{LightGBM} + 0.4 \times \text{Neural Network}$ was engineered. 
@@ -56,18 +58,11 @@ This structure effectively harvests the high generalizability of LightGBM alongs
 
 ## Behavioral Insights: The Churn Hierarchy
 
-By evaluating and cross-referencing feature importances across macro and micro-focused models, this project establishes a distinct behavioral hierarchy for policy churn:    
-  ┌────────────────────────────────────────────────────────┐
-  │  MACRO-DRIVERS (The "Who")                             │
-  │  - Policy Year (Decimal)                               │
-  │  - Payment Mode (Monthly)                              │
-  └───────────────────────────┬────────────────────────────┘
-                              ▼
-  ┌────────────────────────────────────────────────────────┐
-  │  MICRO-DRIVERS (The "Tipping Point")                   │
-  │  - Premium Price Thresholds                            │
-  │  - Zero Advance Premium Flags                          │
-  └────────────────────────────────────────────────────────┘
+By evaluating and cross-referencing feature importances across macro and micro-focused models, this project establishes a distinct behavioral hierarchy for policy churn:   
+
+MACRO-DRIVERS (The "Who"): Policy Year (Decimal), Payment Mode (Monthly)  
+MICRO-DRIVERS (The "Tipping Point"): Premium Price Thresholds, Zero Advance Premium Flags 
+
 
 (1) Macro-Drivers (The "Who"): 
 Random Forest and XGBoost prioritize global attributes. Policy Year (Decimal) and Payment Mode (Monthly) act as the most foundational risk filters. Shorter tenures coupled with high payment frequencies provide repeated behavioral "opportunities" for a consumer to deliberately terminate coverage. High-risk profiling isolates monthly-paying clients sitting right at their 1-to-2 year policy re-evaluation marks.  
