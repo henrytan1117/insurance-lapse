@@ -39,7 +39,7 @@ The analysis was conducted on an extensive life insurance policy dataset compris
 
 Data was partitioned using a robust 85% training/testing split, with the training block further sub-split into a 70% model training set and a 30% internal validation set.  
 
-## Diagnostic Results & Model Performance1. 
+## Diagnostic Results & Model Performance
 (1) Baseline Model Violations
 - Box-Tidwell Test: Returned highly significant $p$-values across almost all continuous inputs, confirming that the relationships between predictors and log-odds are deeply non-linear.
 - Ramsey RESET Test: Heavily rejected the null hypothesis of proper specification ($\text{LR Statistic} = 539.5159$, $p < 0.0001$), proving a standard logistic framework misses crucial multi-way interactions.
