@@ -1,0 +1,335 @@
+digraph {
+    graph [ rankdir=TB ]
+
+    0 [ label="POLICY YEAR (DECIMAL)<1.66666663" ]
+    0 -> 1 [label="yes" color="#FF0000"]
+    0 -> 2 [label="no, missing" color="#0000FF"]
+
+    1 [ label="PAYMENT MODE_Monthly<1" ]
+    1 -> 3 [label="yes" color="#FF0000"]
+    1 -> 4 [label="no, missing" color="#0000FF"]
+
+    3 [ label="POLICY YEAR (DECIMAL)<1.16666663" ]
+    3 -> 7 [label="yes" color="#FF0000"]
+    3 -> 8 [label="no, missing" color="#0000FF"]
+
+    7 [ label="PAYMENT MODE_Quaterly<1" ]
+    7 -> 15 [label="yes" color="#FF0000"]
+    7 -> 16 [label="no, missing" color="#0000FF"]
+
+    15 [ label="PAYMENT MODE_Semiannually<1" ]
+    15 -> 31 [label="yes" color="#FF0000"]
+    15 -> 32 [label="no, missing" color="#0000FF"]
+
+    31 [ label="leaf=0.825917304" ]
+
+    32 [ label="POLICY YEAR (DECIMAL)<0.666666687" ]
+    32 -> 61 [label="yes" color="#FF0000"]
+    32 -> 62 [label="no, missing" color="#0000FF"]
+
+    61 [ label="leaf=0.827504158" ]
+
+    62 [ label="leaf=0.1988502" ]
+
+    16 [ label="POLICY YEAR (DECIMAL)<0.416666657" ]
+    16 -> 33 [label="yes" color="#FF0000"]
+    16 -> 34 [label="no, missing" color="#0000FF"]
+
+    33 [ label="leaf=0.808138072" ]
+
+    34 [ label="PREMIUM<381.313141" ]
+    34 -> 63 [label="yes" color="#FF0000"]
+    34 -> 64 [label="no, missing" color="#0000FF"]
+
+    63 [ label="leaf=-0.0616363287" ]
+
+    64 [ label="leaf=0.289073259" ]
+
+    8 [ label="PAYMENT MODE_Single Premium<1" ]
+    8 -> 17 [label="yes" color="#FF0000"]
+    8 -> 18 [label="no, missing" color="#0000FF"]
+
+    17 [ label="PREMIUM<119" ]
+    17 -> 35 [label="yes" color="#FF0000"]
+    17 -> 36 [label="no, missing" color="#0000FF"]
+
+    35 [ label="POLICY TYPE 3_C<1" ]
+    35 -> 65 [label="yes" color="#FF0000"]
+    35 -> 66 [label="no, missing" color="#0000FF"]
+
+    65 [ label="leaf=-0.414396316" ]
+
+    66 [ label="leaf=-0.184691697" ]
+
+    36 [ label="CHANNEL1<7" ]
+    36 -> 67 [label="yes" color="#FF0000"]
+    36 -> 68 [label="no, missing" color="#0000FF"]
+
+    67 [ label="leaf=0.323639989" ]
+
+    68 [ label="leaf=0.105763733" ]
+
+    18 [ label="PREMIUM<88" ]
+    18 -> 37 [label="yes" color="#FF0000"]
+    18 -> 38 [label="no, missing" color="#0000FF"]
+
+    37 [ label="BENEFIT<59000" ]
+    37 -> 69 [label="yes" color="#FF0000"]
+    37 -> 70 [label="no, missing" color="#0000FF"]
+
+    69 [ label="leaf=0.758443534" ]
+
+    70 [ label="leaf=0.326721817" ]
+
+    38 [ label="ENTRY AGE<51" ]
+    38 -> 71 [label="yes" color="#FF0000"]
+    38 -> 72 [label="no, missing" color="#0000FF"]
+
+    71 [ label="leaf=0.359470427" ]
+
+    72 [ label="leaf=0.075900726" ]
+
+    4 [ label="POLICY YEAR (DECIMAL)<0.333333343" ]
+    4 -> 9 [label="yes" color="#FF0000"]
+    4 -> 10 [label="no, missing" color="#0000FF"]
+
+    9 [ label="POLICY YEAR (DECIMAL)<0.25" ]
+    9 -> 19 [label="yes" color="#FF0000"]
+    9 -> 20 [label="no, missing" color="#0000FF"]
+
+    19 [ label="leaf=0.820186734" ]
+
+    20 [ label="PREMIUM<116.762627" ]
+    20 -> 39 [label="yes" color="#FF0000"]
+    20 -> 40 [label="no, missing" color="#0000FF"]
+
+    39 [ label="leaf=-0.103606753" ]
+
+    40 [ label="CHANNEL2<2" ]
+    40 -> 73 [label="yes" color="#FF0000"]
+    40 -> 74 [label="no, missing" color="#0000FF"]
+
+    73 [ label="leaf=-0.0799059123" ]
+
+    74 [ label="leaf=0.552458584" ]
+
+    10 [ label="POLICY TYPE 1<6" ]
+    10 -> 21 [label="yes" color="#FF0000"]
+    10 -> 22 [label="no, missing" color="#0000FF"]
+
+    21 [ label="CHANNEL1<5" ]
+    21 -> 41 [label="yes" color="#FF0000"]
+    21 -> 42 [label="no, missing" color="#0000FF"]
+
+    41 [ label="PREMIUM<1707.07068" ]
+    41 -> 75 [label="yes" color="#FF0000"]
+    41 -> 76 [label="no, missing" color="#0000FF"]
+
+    75 [ label="leaf=0.0267671309" ]
+
+    76 [ label="leaf=0.353464246" ]
+
+    42 [ label="POLICY YEAR (DECIMAL)<0.666666687" ]
+    42 -> 77 [label="yes" color="#FF0000"]
+    42 -> 78 [label="no, missing" color="#0000FF"]
+
+    77 [ label="leaf=0.292359948" ]
+
+    78 [ label="leaf=0.161683857" ]
+
+    22 [ label="POLICY TYPE 1<10" ]
+    22 -> 43 [label="yes" color="#FF0000"]
+    22 -> 44 [label="no, missing" color="#0000FF"]
+
+    43 [ label="POLICY YEAR (DECIMAL)<0.666666687" ]
+    43 -> 79 [label="yes" color="#FF0000"]
+    43 -> 80 [label="no, missing" color="#0000FF"]
+
+    79 [ label="leaf=0.672491133" ]
+
+    80 [ label="leaf=0.434968948" ]
+
+    44 [ label="CHANNEL2<3" ]
+    44 -> 81 [label="yes" color="#FF0000"]
+    44 -> 82 [label="no, missing" color="#0000FF"]
+
+    81 [ label="leaf=0.348547846" ]
+
+    82 [ label="leaf=0.15606384" ]
+
+    2 [ label="POLICY TYPE 1<8" ]
+    2 -> 5 [label="yes" color="#FF0000"]
+    2 -> 6 [label="no, missing" color="#0000FF"]
+
+    5 [ label="POLICY TYPE 3_B<1" ]
+    5 -> 11 [label="yes" color="#FF0000"]
+    5 -> 12 [label="no, missing" color="#0000FF"]
+
+    11 [ label="POLICY YEAR (DECIMAL)<5.08333349" ]
+    11 -> 23 [label="yes" color="#FF0000"]
+    11 -> 24 [label="no, missing" color="#0000FF"]
+
+    23 [ label="PAYMENT MODE_Monthly<1" ]
+    23 -> 45 [label="yes" color="#FF0000"]
+    23 -> 46 [label="no, missing" color="#0000FF"]
+
+    45 [ label="POLICY TYPE 1<4" ]
+    45 -> 83 [label="yes" color="#FF0000"]
+    45 -> 84 [label="no, missing" color="#0000FF"]
+
+    83 [ label="leaf=0.106589533" ]
+
+    84 [ label="leaf=-0.328724653" ]
+
+    46 [ label="POLICY YEAR (DECIMAL)<3.5" ]
+    46 -> 85 [label="yes" color="#FF0000"]
+    46 -> 86 [label="no, missing" color="#0000FF"]
+
+    85 [ label="leaf=-0.0962501615" ]
+
+    86 [ label="leaf=-0.19091782" ]
+
+    24 [ label="PAYMENT MODE_Monthly<1" ]
+    24 -> 47 [label="yes" color="#FF0000"]
+    24 -> 48 [label="no, missing" color="#0000FF"]
+
+    47 [ label="CHANNEL1<3" ]
+    47 -> 87 [label="yes" color="#FF0000"]
+    47 -> 88 [label="no, missing" color="#0000FF"]
+
+    87 [ label="leaf=-0.194120333" ]
+
+    88 [ label="leaf=0.316185772" ]
+
+    48 [ label="POLICY TYPE 3_D<1" ]
+    48 -> 89 [label="yes" color="#FF0000"]
+    48 -> 90 [label="no, missing" color="#0000FF"]
+
+    89 [ label="leaf=-0.28719756" ]
+
+    90 [ label="leaf=-0.223892987" ]
+
+    12 [ label="POLICY YEAR (DECIMAL)<6.91666651" ]
+    12 -> 25 [label="yes" color="#FF0000"]
+    12 -> 26 [label="no, missing" color="#0000FF"]
+
+    25 [ label="POLICY YEAR (DECIMAL)<4.08333349" ]
+    25 -> 49 [label="yes" color="#FF0000"]
+    25 -> 50 [label="no, missing" color="#0000FF"]
+
+    49 [ label="POLICY YEAR (DECIMAL)<3.91666675" ]
+    49 -> 91 [label="yes" color="#FF0000"]
+    49 -> 92 [label="no, missing" color="#0000FF"]
+
+    91 [ label="leaf=0.483923495" ]
+
+    92 [ label="leaf=-0.0675100759" ]
+
+    50 [ label="POLICY YEAR (DECIMAL)<4.5" ]
+    50 -> 93 [label="yes" color="#FF0000"]
+    50 -> 94 [label="no, missing" color="#0000FF"]
+
+    93 [ label="leaf=0.735640883" ]
+
+    94 [ label="leaf=0.482086509" ]
+
+    26 [ label="PAYMENT MODE_Monthly<1" ]
+    26 -> 51 [label="yes" color="#FF0000"]
+    26 -> 52 [label="no, missing" color="#0000FF"]
+
+    51 [ label="leaf=-0.350224167" ]
+
+    52 [ label="leaf=0.28661716" ]
+
+    6 [ label="PAYMENT MODE_Monthly<1" ]
+    6 -> 13 [label="yes" color="#FF0000"]
+    6 -> 14 [label="no, missing" color="#0000FF"]
+
+    13 [ label="PAYMENT MODE_Quaterly<1" ]
+    13 -> 27 [label="yes" color="#FF0000"]
+    13 -> 28 [label="no, missing" color="#0000FF"]
+
+    27 [ label="PAYMENT MODE_Semiannually<1" ]
+    27 -> 53 [label="yes" color="#FF0000"]
+    27 -> 54 [label="no, missing" color="#0000FF"]
+
+    53 [ label="CHANNEL1<2" ]
+    53 -> 95 [label="yes" color="#FF0000"]
+    53 -> 96 [label="no, missing" color="#0000FF"]
+
+    95 [ label="leaf=-0.256257147" ]
+
+    96 [ label="leaf=0.495478511" ]
+
+    54 [ label="CHANNEL1<5" ]
+    54 -> 97 [label="yes" color="#FF0000"]
+    54 -> 98 [label="no, missing" color="#0000FF"]
+
+    97 [ label="leaf=0.149345756" ]
+
+    98 [ label="leaf=-0.312310129" ]
+
+    28 [ label="ENTRY AGE<49" ]
+    28 -> 55 [label="yes" color="#FF0000"]
+    28 -> 56 [label="no, missing" color="#0000FF"]
+
+    55 [ label="POLICY YEAR (DECIMAL)<3.33333325" ]
+    55 -> 99 [label="yes" color="#FF0000"]
+    55 -> 100 [label="no, missing" color="#0000FF"]
+
+    99 [ label="leaf=0.0347853564" ]
+
+    100 [ label="leaf=-0.209784552" ]
+
+    56 [ label="POLICY YEAR (DECIMAL)<3.5" ]
+    56 -> 101 [label="yes" color="#FF0000"]
+    56 -> 102 [label="no, missing" color="#0000FF"]
+
+    101 [ label="leaf=0.326876104" ]
+
+    102 [ label="leaf=-0.103606753" ]
+
+    14 [ label="ENTRY AGE<53" ]
+    14 -> 29 [label="yes" color="#FF0000"]
+    14 -> 30 [label="no, missing" color="#0000FF"]
+
+    29 [ label="ENTRY AGE<12" ]
+    29 -> 57 [label="yes" color="#FF0000"]
+    29 -> 58 [label="no, missing" color="#0000FF"]
+
+    57 [ label="POLICY TYPE 3_D<1" ]
+    57 -> 103 [label="yes" color="#FF0000"]
+    57 -> 104 [label="no, missing" color="#0000FF"]
+
+    103 [ label="leaf=0.408375233" ]
+
+    104 [ label="leaf=0.0391779989" ]
+
+    58 [ label="CHANNEL1<5" ]
+    58 -> 105 [label="yes" color="#FF0000"]
+    58 -> 106 [label="no, missing" color="#0000FF"]
+
+    105 [ label="leaf=0.085830979" ]
+
+    106 [ label="leaf=0.239834413" ]
+
+    30 [ label="POLICY TYPE 1<9" ]
+    30 -> 59 [label="yes" color="#FF0000"]
+    30 -> 60 [label="no, missing" color="#0000FF"]
+
+    59 [ label="POLICY YEAR (DECIMAL)<2.33333325" ]
+    59 -> 107 [label="yes" color="#FF0000"]
+    59 -> 108 [label="no, missing" color="#0000FF"]
+
+    107 [ label="leaf=0.555972874" ]
+
+    108 [ label="leaf=0.244439825" ]
+
+    60 [ label="ENTRY AGE<55" ]
+    60 -> 109 [label="yes" color="#FF0000"]
+    60 -> 110 [label="no, missing" color="#0000FF"]
+
+    109 [ label="leaf=0.1928543" ]
+
+    110 [ label="leaf=0.0252405889" ]
+}
