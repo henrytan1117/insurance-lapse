@@ -68,7 +68,9 @@ MICRO-DRIVERS (The "Tipping Point"): Premium Price Thresholds, Zero Advance Prem
 Random Forest and XGBoost prioritize global attributes. Policy Year (Decimal) and Payment Mode (Monthly) act as the most foundational risk filters. Shorter tenures coupled with high payment frequencies provide repeated behavioral "opportunities" for a consumer to deliberately terminate coverage. High-risk profiling isolates monthly-paying clients sitting right at their 1-to-2 year policy re-evaluation marks.  
 
 (2) Micro-Drivers (The "Tipping Point"): 
-LightGBM and Neural Network architectures zoom into local split branches to capture micro-level triggers. Once a consumer falls into a high-risk macro profile, specific local constraints like exact Premium price points, Entry Age, and an absolute absence of advance payments trigger the actual lapse. Within localized clusters, an advance payment count of exactly zero serves as a near-absolute functional indicator of churn.  
+LightGBM and Neural Network architectures zoom into local split branches to capture micro-level triggers. Once a consumer falls into a high-risk macro profile, specific local constraints like exact Premium price points, Entry Age, and an absolute absence of advance payments trigger the actual lapse. Within localized clusters, an advance payment count of exactly zero serves as a near-absolute functional indicator of churn. 
+
+![Feature Importance](feature_importance.png)
 
 ## Resources
 - insurance_data_cleaned.csv: The processed and imputed life insurance dataset containing 185,537 polished records ready for machine learning tasks.
